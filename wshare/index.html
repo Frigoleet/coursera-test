@@ -2,81 +2,31 @@
 <Html>
     <head>
         <title>Det Smarta Visitkortet</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- Namn & Bild -->
         <div class="container">
             <div class="Name">
-                <p class="name">jesper <!-- Fixa alignment-->
-                </p>
-                <img src="..\media\jesper.jpg" alt="Pacta Sunt Servanda">
+                <img src="..\media\jesper.jpg" alt="Profile picture">
+                <h1 class="name">Jesper Göthe</h1> <!-- Fixa alignment på långa namn-->
             </div>
         </div>
-        <div class="doubleButtonContainer">
-            <button class="button1" type="button">Privatperson</button>
-            <button class="button1" type="button">Företag</button>
+        
+        <div class="singleButtonContainer">
+            <button class="button1" type="button" onclick="openFile()">Lägg till i Kontakter</button>
         </div>
-
-
+        
+        <div class="singleButtonContainer">
+        <button class="button1" type="button"onclick="openFile()">LinkedIn</button>
+        </div>
 
 
 
     </body>
 
     <!-- CSS -->
-<style>
-    .name{
-        text-align: center;
-        font-size: 48px;
-        font-weight: 500;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
-    .container {
-        padding: 1%;
-        display: flex;
-        justify-content: center; /* center horizontally */
-    }
-    .container img {
-        padding: 1%;
-        width: 300px;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain; /* or 'cover' depending on your requirements */
-        
-    }
-    .doubleButtonContainer{
-        text-align: center;
-        height: auto;
-        position: relative;
-        padding: 40px
-    }
-    .button1 {
-        /* Button attributes */
-        width: 300px;
-        border-width: 0px;
-        border-color: #000000;
-        border-radius: 25px;
 
-        /* Text attributes */
-        color: #FFFFFF;
-        font-size: 12px;
-        font-family: 'Overpass',Helvetica,Arial,Lucida,sans-serif; /* funkar inte */
-        font-weight: 700;
-        background-image: linear-gradient(181deg,#0a0000 5%,#cccccc 140%);
-        padding-top: 35px;
-        padding-bottom: 35px;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 1%;
-
-    }
-    
-    body{
-        background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-    /*background-image: linear-gradient(132deg, #F4D03F 0%, #16a077 100%);*/
-    }
-</style>
 
 </Html>
 

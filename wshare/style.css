@@ -1,0 +1,86 @@
+
+<style>
+    .name{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 500;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .container {
+        padding: 3%;
+        display: flex;
+        justify-content: center; /* center horizontally */
+    }
+    .container img {
+        padding: 1%;
+        width: 300px;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        border-width: 0px;
+        border-color: #000000;
+        border-radius: 40px;
+        object-fit: contain; /* or 'cover' depending on your requirements */
+        
+    }
+    .doubleButtonContainer{
+        text-align: center;
+        height: auto;
+        position: relative;
+        padding: 40px
+    }
+    .singleButtonContainer{
+        text-align: center;
+        height: auto;
+        position: relative;
+        padding: 1%
+    }
+
+    .button1 {
+        /* Button attributes */
+        width: 300px;
+        border-width: 0px;
+        border-color: #000000;
+        border-radius: 25px;
+
+        /* Text attributes */
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: 'Overpass',Helvetica,Arial,Lucida,sans-serif; /* funkar inte */
+        font-weight: 700;
+        background-image: linear-gradient(181deg,#0a0000 5%,#cccccc 140%);
+        padding-top: 35px;
+        padding-bottom: 35px;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+
+        content: attr(data-icon);
+        font-family: "ETmodules";
+        line-height: inherit;
+        font-size: inherit;
+
+    }
+    
+    body{
+        background-image: linear-gradient(90deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(206deg 100% 18%) 20%,
+        hsl(206deg 100% 36%) 30%,
+        hsl(204deg 100% 53%) 38%,
+        hsl(198deg 100% 65%) 42%,
+        hsl(191deg 100% 77%) 47%,
+        hsl(191deg 100% 77%) 52%,
+        hsl(198deg 100% 65%) 57%,
+        hsl(204deg 100% 53%) 62%,
+        hsl(206deg 100% 36%) 70%,
+        hsl(206deg 100% 18%) 80%,
+        hsl(0deg 0% 0%) 100%);
+
+        background-repeat: no-repeat;
+    }
+    html{
+        margin: 0;
+        height: 100%;
+    }
+</style>
