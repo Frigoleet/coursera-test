@@ -1,5 +1,4 @@
 
-<style>
     .name{
         text-align: center;
         font-size: 48px;
@@ -42,6 +41,8 @@
         border-width: 0px;
         border-color: #000000;
         border-radius: 25px;
+        cursor: pointer;
+
 
         /* Text attributes */
         color: #FFFFFF;
@@ -83,4 +84,3 @@
         margin: 0;
         height: 100%;
     }
-</style>
