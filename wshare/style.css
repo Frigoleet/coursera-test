@@ -1,9 +1,8 @@
-
+/* font size funkar inte på knappar, inte heller font weight riktigt? Kan inte få light verkar det som, stannar på normal */
+       
     .name{
         text-align: center;
-        font-size: 48px;
-        font-weight: 500;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 3rem;
     }
     .container {
         padding: 3%;
@@ -34,52 +33,7 @@
         position: relative;
         padding: 1%
     }
-    
-/* Default button styles */
-button {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-  }
-  
-  /* Button styles for screens at least 640px wide */
-  @media (min-width: 640px) {
-    .button1 {
-      font-size: 1.25rem;
-      padding: 1rem 2rem;
-    }
-  }
-  
-  /* Button styles for screens at least 768px wide */
-  @media (min-width: 768px) {
-    .button1 {
-      font-size: 1.5rem;
-      padding: 1.25rem 2.5rem;
-    }
-  }
-  
-  /* Button styles for screens at least 1024px wide */
-  @media (min-width: 1024px) {
-    .button1 {
-      font-size: 1.75rem;
-      padding: 1.5rem 3rem;
-    }
-  }
-  
-  /* Button styles for screens at least 1280px wide */
-  @media (min-width: 1280px) {
-    .button1 {
-      font-size: 2rem;
-      padding: 1.75rem 3.5rem;
-    }
-  }
-  
-  /* Button styles for screens at least 1536px wide */
-  @media (min-width: 1536px) {
-    .button1 {
-      font-size: 2.25rem;
-      padding: 2rem 4rem;
-    }
-  }
+
 
     .button1 {
         /* Button attributes */
@@ -87,19 +41,18 @@ button {
         border-color: #000000;
         border-radius: 25px;
         cursor: pointer;
+        background-image: linear-gradient(181deg,#0a0000 5%,#cccccc 140%);
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
 
 
         /* Text attributes */
         color: #FFFFFF;
-        font-size: 12px;
-        font-family: 'Overpass',Helvetica,Arial,Lucida,sans-serif; /* funkar inte */
-        font-weight: 700;
-        background-image: linear-gradient(181deg,#0a0000 5%,#cccccc 140%);
-        padding-top: 35px;
-        padding-bottom: 35px;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 1%;
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        font-weight: 300;
+
 
         /*
         content: attr(data-icon);
@@ -108,8 +61,100 @@ button {
         font-size: inherit; */
 
     }
+ 
+  /* Button styles for screens at least 640px wide */
+  @media (min-width: 640px) {
+    .button1 {
+      font-size: 1.25rem;
+      padding: 1rem 2rem;
+      width: 250px;
     
+    }
+  }
+  
+  /* Button styles for screens at least 768px wide */
+  @media (min-width: 768px) {
+    .button1 {
+      font-size: 1.5rem;
+      padding: 1.25rem 2.5rem;
+      width: 250px;
+      
+    }
+  }
+  
+  /* Button styles for screens at least 1024px wide */
+  @media (min-width: 1024px) {
+    .button1 {
+      font-size: 1.75rem;
+      padding: 1.5rem 3rem;
+      width: 300px;
+      
+    }
+  }
+  
+  /* Button styles for screens at least 1280px wide */
+  @media (min-width: 1280px) {
+    .button1 {
+      font-size: 2rem;
+      padding: 1.75rem 3.5rem;
+      width: 300px;
+      
+    }
+  }
+  
+  /* Button styles for screens at least 1536px wide */
+  @media (min-width: 1536px) {
+    .button1 {
+      font-size: 2.25rem;
+      padding: 2rem 4rem;
+      width: 350px;
+     
+    }
+  }
+
+/* Font styles */
+html {
+
+    font-size: 14px
+  
+  }
+   @font-face {
+    font-family: 'Manrope';
+    src: url('..fonts/Manrope-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Manrope';
+    src: url('..fonts/Manrope-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Manrope';
+    src: url('..fonts/Manrope-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Manrope';
+    src: url('..fonts/Manrope-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  
+  /* sets font */
+  body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+  }
+  
+
     body{
+        /* Background styles */
         background-image: linear-gradient(90deg,
         hsl(0deg 0% 0%) 0%,
         hsl(206deg 100% 18%) 20%,
