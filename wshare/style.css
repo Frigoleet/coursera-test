@@ -34,10 +34,55 @@
         position: relative;
         padding: 1%
     }
+    
+/* Default button styles */
+button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  /* Button styles for screens at least 640px wide */
+  @media (min-width: 640px) {
+    .button1 {
+      font-size: 1.25rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  /* Button styles for screens at least 768px wide */
+  @media (min-width: 768px) {
+    .button1 {
+      font-size: 1.5rem;
+      padding: 1.25rem 2.5rem;
+    }
+  }
+  
+  /* Button styles for screens at least 1024px wide */
+  @media (min-width: 1024px) {
+    .button1 {
+      font-size: 1.75rem;
+      padding: 1.5rem 3rem;
+    }
+  }
+  
+  /* Button styles for screens at least 1280px wide */
+  @media (min-width: 1280px) {
+    .button1 {
+      font-size: 2rem;
+      padding: 1.75rem 3.5rem;
+    }
+  }
+  
+  /* Button styles for screens at least 1536px wide */
+  @media (min-width: 1536px) {
+    .button1 {
+      font-size: 2.25rem;
+      padding: 2rem 4rem;
+    }
+  }
 
     .button1 {
         /* Button attributes */
-        width: 300px;
         border-width: 0px;
         border-color: #000000;
         border-radius: 25px;
@@ -56,10 +101,11 @@
         margin-right: 1%;
         margin-top: 1%;
 
+        /*
         content: attr(data-icon);
         font-family: "ETmodules";
         line-height: inherit;
-        font-size: inherit;
+        font-size: inherit; */
 
     }
     
