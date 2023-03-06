@@ -1,5 +1,5 @@
 
-
+/* Font styles */
 @font-face {
   font-family: 'Manrope';
   src: url('..fonts/Manrope-Regular.ttf') format('truetype');
@@ -26,13 +26,6 @@
   font-weight: 200;
   font-style: normal;
 }
-/* Font styles */
-html {
-
-  font-size: 18px
-  
-
-}
 
 
 /* sets font */
@@ -42,7 +35,7 @@ body {
 }
     .name{
         text-align: center;
-        font-size: 3rem;
+        font-size: 3.5rem;
         letter-spacing: 0.1em;
     }
     .container {
@@ -76,12 +69,12 @@ body {
     }
 
     .buttonHeaderText{
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
 
     }
     .buttonDescriptionText{
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       font-weight: light;
       line-height: 20px;
     }
@@ -90,7 +83,6 @@ body {
         border-color: #000000;
         background-color: #0f0000cb;
         border-width: 1px;
-
         /* Button attributes 
         border-width: 0px;
         border-color: #000000;*/
@@ -181,7 +173,8 @@ body {
 
     body{
         /* Background styles */
-        background-image: linear-gradient(90deg,
+        background-image: linear-gradient(
+        90deg,
         hsl(0deg 0% 0%) 0%,
         hsl(206deg 100% 18%) 20%,
         hsl(206deg 100% 36%) 30%,
@@ -196,8 +189,7 @@ body {
         hsl(0deg 0% 0%) 100%);
 
         background-repeat: no-repeat;
-    }
-    html{
-        margin: 0;
         height: 100%;
+        margin: 0;
+        padding: 0;
     }
