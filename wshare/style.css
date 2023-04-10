@@ -41,6 +41,9 @@ body {
         padding: 3%;
         display: flex;
         justify-content: center; /* center horizontally */
+
+        opacity: 0;
+        animation: fadeIn 1.8s forwards;
     }
     .container img {
         padding: 1%;
@@ -53,6 +56,7 @@ body {
         border-radius: 40px;
         object-fit: contain; /* or 'cover' depending on your requirements */
         
+
     }
     .doubleButtonContainer{
         text-align: center;
@@ -82,9 +86,6 @@ body {
         border-color: #000000;
         background-color: #0f0000cb;
         border-width: 1px;
-        /* Button attributes 
-        border-width: 0px;
-        border-color: #000000;*/
         border-radius: 25px;
         cursor: pointer;
         margin-left: 1%;
@@ -102,18 +103,16 @@ body {
         text-align: right;
 
 
-        /*
-        content: attr(data-icon);
-        font-family: "ETmodules";
-        line-height: inherit;
-        font-size: inherit; */
-
-    }
+        /*Animations*/
+      opacity: 0;
+      transform: rotate(2deg) scale(0.90);
+      animation: fadeInWiggle 2s ease-in-out forwards;
+      }
  
   /* Button styles for screens at least 640px wide */
   @media (min-width: 640px) {
     .button1 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       padding: 1em 2em;
       width: 400px;
     
@@ -123,7 +122,7 @@ body {
   /* Button styles for screens at least 768px wide */
   @media (min-width: 768px) {
     .button1 {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       padding: 25px 25px 25px 70px;
       width: 550px;
       
@@ -133,7 +132,7 @@ body {
   /* Button styles for screens at least 1024px wide */
   @media (min-width: 1024px) {
     .button1 {
-      font-size: 1.9rem;
+      font-size: 1.8rem;
       padding: 30px 30px 30px 80px;
       width: 650px;
       
@@ -175,7 +174,17 @@ body {
       padding: 0;
       height: 100%;
       /* Background styles */
+
       background-image: linear-gradient(
+        rgba(150, 115, 170, 0.5),
+        rgba(150, 115, 170, 0.5)
+      ),
+      url(../media/meeting-background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      /* background-image: linear-gradient(
         90deg,
         hsl(0deg 0% 0%) 0%,
         hsl(206deg 100% 18%) 20%,
@@ -188,12 +197,103 @@ body {
         hsl(204deg 100% 53%) 62%,
         hsl(206deg 100% 36%) 70%,
         hsl(206deg 100% 18%) 80%,
-        hsl(0deg 0% 0%) 100%);
+        hsl(0deg 0% 0%) 100%); */
 
       
       background-repeat: no-repeat;
       background-size: cover;
-    
-        
+          
     }
 
+    .business-card {
+      width: 350px;
+      height: auto;
+      margin: 30px auto;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.2;
+      padding: 20px;
+      display: flex;
+      border-width: 1px;
+      border-radius: 3px;
+
+      
+      /*Animations*/
+      opacity: 0;
+      transform: rotate(2deg) scale(0.90);
+      animation: fadeInWiggle 2.5s ease-in-out forwards;
+      
+     
+      }
+      /*Animations*/
+      @keyframes fadeInWiggle {
+        from {
+          opacity: 0;
+          transform: rotate(2deg) scale(0.95);
+        }
+        50% {
+          transform: rotate(-1deg) scale(1.08);
+        }
+        to {
+          opacity: 1;
+          transform: rotate(0deg) scale(1);
+        }
+      }
+      @keyframes float { /*Not in use right now*/
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.02);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+    .logo {
+      background-image: url('../media/ey-white-logo.png');
+      background-size: contain;
+      width: 80px;
+      height: 80px;
+      vertical-align: middle;
+      }
+  
+    .info {
+      font-size: 14px;
+      vertical-align: middle;
+      text-align: right;
+      flex: 1;
+    }
+    
+    .info h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    
+    .info h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    
+    .info a {
+      display: block;
+      margin-bottom: 5px;
+      text-decoration: none;
+      color: #337ab7;
+    }
+    
+    .info a:hover {
+      text-decoration: underline;
+    }
